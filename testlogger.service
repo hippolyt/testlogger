@@ -1,0 +1,10 @@
+[Unit]
+Descriptopn=SD test logger
+[Service]
+Restart=always
+RestartSec=60
+StartLimitInterval=400
+StartLimitBurst=3
+ExecStart=/opt/testlogger/testlogger.sh
+[Install]
+WantedBy=multi-user.target
